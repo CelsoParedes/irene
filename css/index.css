@@ -65,7 +65,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #fec503;
-  border-color: #f6bf01;
+  border-color: #9DD0C9;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -468,7 +468,7 @@ header .intro-text .intro-heading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  background-color: #9DD0C9;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -812,4 +812,8 @@ div::selection,
 input::selection,
 textarea::selection {
     background: #9DD0C9;
+}
+h3.turn-white-selected::selection{
+  color: white;
+  background: #9DD0C9;
 }
