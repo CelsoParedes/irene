@@ -164,6 +164,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #9DD0C9;
   border-color: #9DD0C9;
 }
+
 .navbar-toggle {
   transition: padding 1s;
   padding: 15px 10px 15px 10px;
@@ -817,3 +818,30 @@ h3.turn-white-selected::selection{
   color: white;
   background: #9DD0C9;
 }
+#name.ng-valid.ng-dirty,
+#email.ng-valid.ng-dirty,
+#phone.ng-valid.ng-dirty,
+#message.ng-valid.ng-dirty {
+  border: 2px solid #78FA89;
+}
+#name.ng-invalid.ng-dirty,
+#email.ng-invalid.ng-dirty,
+#phone.ng-invalid.ng-dirty,
+#message.ng-invalid.ng-dirty {
+  border: 2px solid #FA787E;
+}
+
+
+/*
+
+@keyframes troll {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+} 
+
+* {
+  transform: rotate();
+  animation-name: troll;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}*/
