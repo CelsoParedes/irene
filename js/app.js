@@ -11,8 +11,27 @@
 	  $scope.ok = function () {
 	  	$modalInstance.close('this is result for close');
 	  };
-	  
+
 	});
+
+	app.controller('portfolioCtrl', function($scope, $modal){
+		this.portfolioData = portfolioImagesAndSubheaders;
+		$scope.open = function(_value) {
+		    var modalInstance = $modal.open({
+		      controller: "ModalInstanceCtrl",
+		      templateUrl: 'myModal',
+		      resolve: {
+		        value: function() {
+		          return _value;
+		        }
+		      }
+		    });
+	  	}
+	});
+
+	/*
+
+	AQUI CAMBIAMOS EL NOMBRE DE EL CONTROLADOR Y LA URL PARA QUE ABRA UN MODAL DE TERMINOS DE USO Y POLITICA DE PRIVACIDAD
 
 	app.controller('portfolioCtrl', function($scope, $modal){
 		this.portfolioData = portfolioImagesAndSubheaders;
@@ -28,7 +47,7 @@
 		    });
 		    modalInstance.result
 	  	}
-	});
+	});*/
 
 	app.directive('portfolioItem', function(){
 		return{
@@ -41,24 +60,8 @@
 
 
 
-	app.controller('formController',function($http){
-		/*this.emai = {};
-		console.log(this.emai);
-		this.addMail = function(){
-			$http.get('js/emails.json').success(function(data){
-			data.push({},{});
-			console.log(data);
-			});
-		};
-
-		Para terminar esta parte de la página tengo que usar node y mandar el e-mail por la parte de servidor y no de
-		cliente así que no se si es válido éste código pero para validar se va a necesitar por lo menos una parte.
 
 
-
-
-		*/
-	});
 
 	var portfolioImagesAndSubheaders = [
 	{i: 'css/img/portfolio/roundicons.png',h4: 'Round Icons', p: 'Graphic Design', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'},

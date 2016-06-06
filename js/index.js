@@ -18,3 +18,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+function validation() {
+  if ($('input').hasClass('ng-empty') || $('input').hasClass('ng-invalid')) {
+    return false;
+  }
+  return true;
+};
