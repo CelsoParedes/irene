@@ -64,7 +64,7 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #fec503;
+  background-color: #6D9993;
   border-color: #9DD0C9;
 }
 .btn-primary:active,
@@ -831,6 +831,22 @@ h3.turn-white-selected::selection{
   border: 2px solid #FA787E;
 }
 
+.modal-content{
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.modal-body img{
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.modal-body p{
+      width: 85%;
+    text-align: center;
+    float: none;
+    margin-left: 7.5%;
+}
 
 /*
 
