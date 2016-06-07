@@ -29,25 +29,22 @@
 	  	}
 	});
 
-	/*
+	//AQUI CAMBIAMOS EL NOMBRE DE EL CONTROLADOR Y LA URL PARA QUE ABRA UN MODAL DE TERMINOS DE USO Y POLITICA DE PRIVACIDAD
 
-	AQUI CAMBIAMOS EL NOMBRE DE EL CONTROLADOR Y LA URL PARA QUE ABRA UN MODAL DE TERMINOS DE USO Y POLITICA DE PRIVACIDAD
-
-	app.controller('portfolioCtrl', function($scope, $modal){
-		this.portfolioData = portfolioImagesAndSubheaders;
+	app.controller('footerCtrl', function($scope, $modal){
+		this.pt = PolicyAndTerms;
 		$scope.open = function(_value) {
 		    var modalInstance = $modal.open({
 		      controller: "ModalInstanceCtrl",
-		      templateUrl: 'myModal',
+		      templateUrl: 'myModal2',
 		      resolve: {
 		        value: function() {
 		          return _value;
 		        }
 		      }
 		    });
-		    modalInstance.result
 	  	}
-	});*/
+	});
 
 	app.directive('portfolioItem', function(){
 		return{
@@ -87,12 +84,14 @@
 	{i: 'css/img/portfolio/dreams.png',h4: 'Dreams', p: 'Website Design', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'}
 	];
 
-	var emails = [
+	var PolicyAndTerms = [
 	{
-		name: '',
-		email: '',
-		phone: '',
-		msg: ''
+		title: 'Privacy Policy',
+		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'
+	},
+	{
+		title: 'Terms of Use',
+		text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!'
 	}
 	];
 

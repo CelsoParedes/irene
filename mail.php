@@ -1,6 +1,6 @@
 <?
-
-$para = "celso.paredes@sngular.team";
+//u962160298
+$para = "tuemail@gmail.com";//AQUI VA EL EMAIL AL QUE LLEGARAN LOS CORREOS
 $name = $_POST["name"];
 $phone = $_POST["phone"];
 $subject = "$name/$phone ";
@@ -13,7 +13,7 @@ $headers .= "From: $email; \r\n";
 $headers .= "To: $para; \r\n Subject: $subject \r\n";
 
 if(mail($para,$subject,$msg,$headers)){
-	header('Location: http://ireneportfolio.hol.es/');
+	header('Location: http://ireneportfolio.hol.es/#contact');
 }
 else
 	echo "Something goes wrong! Please report this bug to celsoparedespjeda@gmail.com. Thank you!";

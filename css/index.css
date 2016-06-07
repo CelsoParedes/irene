@@ -814,6 +814,9 @@ input::selection,
 textarea::selection {
     background: #9DD0C9;
 }
+h3.turn-white-selected{
+  color: white;
+}
 h3.turn-white-selected::selection{
   color: white;
   background: #9DD0C9;

@@ -218,16 +218,24 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
+                    <ul class="list-inline quicklinks" ng-controller="footerCtrl as fCtrl">
+                        <li ng-repeat="data in fCtrl.pt"><a href="#PrivacyPolicy" ng-click="open(data)">{{data.title}}</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+      <script type="text/ng-template" id="myModal2">
+    <div class="modal-header">
+      <h1>{{data.value.title}}</h1>
+    </div>
+    <div class="modal-body">
+    <p>{{data.value.text}}</p>
+    </div>
+    <button class="btn btn-primary" ng-click="ok()"><i class="fa fa-times"></i> Close Project</button>
+  </script>
 
 
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
